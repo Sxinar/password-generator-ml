@@ -62,3 +62,71 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any inquiries or questions, please contact [me.unreal462@simplelogin.com].
 
 ---
+
+
+---
+# Türkçe
+
+# Şifre Oluşturucu
+
+Şifre Oluşturucu, güçlü ve güvenli şifreler oluşturmak için tasarlanmış bir web uygulamasıdır. Bu araç, şifreyi kullanıcı tercihlerine göre özelleştirmek için çeşitli özellikler sunar.
+
+![Logo](https://raw.githubusercontent.com/Sxinar/password-generator-ml/main/favicon.ico)
+
+## Özellikler
+
+- **Güçlü Şifre Oluşturma**: Büyük harf, küçük harf, sayı ve özel karakterlerin bir karışımıyla güvenli şifreler oluşturur.
+- **Karakter Filtreleri**: Kullanıcıların şifreye hangi karakterleri dahil edeceklerini seçmelerine olanak tanır.
+- **Material You Design**: Temiz ve sezgisel bir kullanıcı arayüzü için Material You tasarım yönergelerini izler.
+- **Koyu Mod**: Bir simgeye tıklanarak açılıp kapatılabilen koyu modu destekler.
+- **Çoklu Dil Desteği**: Tıklanabilir bayraklar aracılığıyla dil seçimiyle İngilizce ve Almanca'yı destekler. - **Panoya Kopyala**: Oluşturulan parolayı kolayca kopyalamak için bir 'Kopyala' simgesi içerir.
+
+## Kurulum
+
+Projeyi yerel olarak kurmak için şu adımları izleyin:
+
+1. Depoyu kopyalayın:
+```sh
+git clone https://github.com/Sxinar/password-generator-ml.git
+```
+
+2. Proje dizinine gidin:
+```sh
+cd password-generator-ml
+```
+
+3. Web tarayıcınızda `index.html` dosyasını açın.
+
+## Kullanım
+
+1. Uygulamayı web tarayıcınızda açın.
+2. İstediğiniz karakter filtrelerini ve seçeneklerini seçin.
+3. Parola oluşturmak için "Oluştur" düğmesine tıklayın.
+4. Oluşturulan parolayı panonuza kopyalamak için "Kopyala" simgesini kullanın.
+5. Simgeyi kullanarak açık ve koyu mod arasında geçiş yapın.
+6. İlgili bayraklara tıklayarak dilleri değiştirin.
+
+## Katkıda Bulunma
+
+Katkılarınız memnuniyetle karşılanır! Lütfen bu deponun çatalını oluşturun ve yapmak istediğiniz değişiklikler için bir çekme isteği gönderin.
+
+1. Depoyu çatallayın
+2. Özellik dalınızı oluşturun (`git checkout -b feature/YourFeature`)
+3. Değişikliklerinizi kaydedin (`git commit -m 'Add some feature'`)
+4. Dala gönderin (`git push origin feature/YourFeature`)
+5. Bir çekme isteği açın
+
+## Lisans
+
+Bu proje MIT Lisansı altında lisanslanmıştır. Ayrıntılar için [LICENSE](LICENSE) dosyasına bakın.
+
+## Teşekkürler
+
+- Simgeler [Material Design Icons](https://materialdesignicons.com/) tarafından
+- Arka plan resimleri tabler.io tarafından
+
+## İletişim
+
+Herhangi bir soru veya sorunuz varsa lütfen [me.unreal462@simplelogin.com] ile iletişime geçin.
+
+---
