@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <span class="material-icons" id="darkModeToggle">dark_mode</span>
+            <span class="flag-icon" id="flagToggle"><img src="language.png" alt="Language"></span>
+        </div>
+        <h1 id="title">Strong Password Generator</h1>
+        <div class="password-display" id="passwordDisplay">Your password will appear here</div>
+        <div class="copy-icon">
+            <span class="material-icons" id="copyIcon">content_copy</span>
+        </div>
+        <div class="options">
+            <label>
+                <input type="checkbox" id="uppercase" checked>
+                <span id="uppercaseLabel">Uppercase Letters (A-Z)</span>
+            </label>
+            <label>
+                <input type="checkbox" id="lowercase" checked>
+                <span id="lowercaseLabel">Lowercase Letters (a-z)</span>
+            </label>
+            <label>
+                <input type="checkbox" id="numbers" checked>
+                <span id="numbersLabel">Numbers (0-9)</span>
+            </label>
+            <label>
+                <input type="checkbox" id="symbols">
+                <span id="symbolsLabel">Symbols (!@#$%^&*)</span>
+            </label>
+        </div>
+        <div class="length">
+            <label for="length" id="lengthLabel">Length: </label>
+            <input type="range" id="length" value="12" min="4" max="32" oninput="updateLengthValue(this.value)">
+            <span id="lengthValue">12</span>
+        </div>
+        <button onclick="generatePassword()" id="generateButton">Generate Password</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
