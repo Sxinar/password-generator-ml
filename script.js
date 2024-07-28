@@ -2,10 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const darkModeToggle = document.getElementById('darkModeToggle');
     const flagToggle = document.getElementById('flagToggle');
     const copyIcon = document.getElementById('copyIcon');
+    const lengthInput = document.getElementById('length');
+    const themeStylesheet = document.getElementById('themeStylesheet');
     let currentLang = 'en';
 
     darkModeToggle.addEventListener('click', () => {
-        document.body.toggleAttribute('data-theme', 'dark');
+        if (themeStylesheet.getAttribute('href') === 'styles.css') {
+            themeStylesheet.setAttribute('href', 'darkmode.css');
+        } else {
+            themeStylesheet.setAttribute('href', 'styles.css');
+        }
     });
 
     flagToggle.addEventListener('click', () => {
@@ -26,6 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     alert('Failed to copy password: ', err);
                 });
         }
+    });
+
+    lengthInput.addEventListener('input', () => {
+        updateLengthValue(lengthInput.value);
+        generatePassword();
     });
 });
 
@@ -108,6 +119,6 @@ function setLanguage(lang) {
 
 function updateFlagIcon(lang) {
     const flagIcon = document.getElementById('flagToggle').querySelector('img');
-    flagIcon.src = lang === 'en' ? 'language.png' : 'language.png';
+    flagIcon.src = lang === 'en' ? 'flag-en.png' : 'flag-tr.png';
     flagIcon.alt = lang === 'en' ? 'English' : 'Türkçe';
 }

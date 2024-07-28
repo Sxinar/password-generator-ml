@@ -5,12 +5,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: #ff9a9e;
-    color: #000000;
+    background: #333333;
+    color: #ffffff;
 }
 
 .container {
-    background: white; /* Dikdörtgenin arka plan rengi beyaz */
+    background: #444444; /* Dikdörtgenin arka plan rengi */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -39,7 +39,7 @@ h1 {
 
 .password-display {
     font-size: 1.5em;
-    background: #f5f5f5;
+    background: #555555;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 20px;
