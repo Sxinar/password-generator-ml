@@ -12,7 +12,7 @@
     <div class="container">
         <div class="top-bar">
             <span class="material-icons" id="darkModeToggle">brightness_4</span>
-            <span class="flag-icon" id="flagToggle"><img src="flag-en.png" alt="Language"></span>
+            <span class="flag-icon" id="flagToggle"><img src="flag-en.png" alt="English"></span>
         </div>
         <h1 id="title">Strong Password Generator</h1>
         <div class="password-display" id="passwordDisplay">Your password will appear here</div>
@@ -39,8 +39,8 @@
         </div>
         <div class="length">
             <label for="length" id="lengthLabel">Length: </label>
-            <input type="range" id="length" value="12" min="4" max="32" oninput="updateLengthValue(this.value)">
-            <span id="lengthValue">12</span>
+            <input type="range" id="length" value="0" min="4" max="32" oninput="updateLengthValue(this.value)">
+            <span id="lengthValue">0</span>
         </div>
         <button onclick="generatePassword()" id="generateButton">Generate Password</button>
     </div>

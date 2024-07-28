@@ -6,6 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeStylesheet = document.getElementById('themeStylesheet');
     let currentLang = 'en';
 
+    // Default length value and password display
+    lengthInput.value = 0;
+    updateLengthValue(0);
+    document.getElementById('passwordDisplay').innerText = 'Your password will appear here';
+
     darkModeToggle.addEventListener('click', () => {
         if (themeStylesheet.getAttribute('href') === 'styles.css') {
             themeStylesheet.setAttribute('href', 'darkmode.css');
@@ -37,6 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
     lengthInput.addEventListener('input', () => {
         updateLengthValue(lengthInput.value);
         generatePassword();
+    });
+
+    document.querySelectorAll('.options input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+            generatePassword();
+        });
     });
 });
 
