@@ -55,13 +55,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements
 
 - Icons by [Material Design Icons](https://materialdesignicons.com/)
-- Background images by [Unsplash](https://unsplash.com/)
+- Background images by tabler.io
 
 ## Contact
 
-For any inquiries or questions, please contact [your email].
+For any inquiries or questions, please contact [me.unreal462@simplelogin.com].
 
 ---
-
-**Note**: Remember to replace the placeholder paths (e.g., `path/to/screenshot.png`) and contact information with your actual details.
-
